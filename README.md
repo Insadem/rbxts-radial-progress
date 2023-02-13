@@ -5,6 +5,11 @@ Repository: [link](https://github.com/Insadem/rbxts-radial-progress).<br/>
 Author: [HintSystem](https://www.roblox.com/users/283367718/profile).<br/>
 Typings & slight changes: [Insadem](https://www.roblox.com/users/1644392228/profile).<br/>
 
+Installation:
+```
+npm install github:insadem/rbxts-radial-progress
+```
+
 Simple example of usage:
 ```TS
 import CircularProgress from "rbxts-radial-progress";
