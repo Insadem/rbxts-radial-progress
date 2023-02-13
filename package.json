@@ -1,0 +1,20 @@
+{
+  "name": "@rbxts/radial-progress",
+  "version": "1.0.0",
+  "description": "Radial progress for all your needs.",
+  "main": "out/init.lua",
+  "files": ["out/*.lua"],
+  "homepage": "https://devforum.roblox.com/t/circular-radial-progress-bar-rounded/1594512",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w"
+  },
+  "keywords": ["radial", "progress", "ui", "loading", "load", "bar"],
+  "author": "Insadem",
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "@rbxts/compiler-types": "^2.0.4-types.1",
+    "@rbxts/types": "^1.0.662",
+    "typescript": "^4.9.5"
+  }
+}
