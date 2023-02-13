@@ -2,9 +2,11 @@
   "name": "@rbxts/radial-progress",
   "version": "1.0.6",
   "description": "Radial progress for all your needs.",
-  "main": "out/init.lua",
+  "main": "src/index.d.ts",
+  "types": "src/index.d.ts",
   "files": [
-    "out/*.lua",
+    "src/*.lua",
+    "src/*d.ts",
     "./README.md"
   ],
   "repository": {

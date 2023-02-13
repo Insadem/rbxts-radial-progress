@@ -1,6 +1,6 @@
 -- Compiled with roblox-ts v2.0.4
-local TS = require(game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("RuntimeLib"))
-local CircularProgress = TS.import(script, game:GetService("ReplicatedStorage"), "MainModule")
+local TS = _G[script]
+local CircularProgress = TS.import(script, script.Parent.Parent)
 game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, false)
 -- New progress circle
 local LoadCircle1 = CircularProgress.new()
