@@ -1,5 +1,5 @@
 {
-  "name": "rbxts-radial-progress",
+  "name": "@rbxts/radial-progress",
   "version": "1.0.6",
   "description": "Radial progress for all your needs.",
   "main": "out/init.lua",
