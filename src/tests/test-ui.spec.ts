@@ -14,14 +14,14 @@ const LoadCircle2 = new CircularProgress({
     AnchorPoint: new Vector2(0, 1),
     BGRoundness: 1,
     Thickness: 0.5
-})
+});
 LoadCircle2.Animate("InfSpin2");
 
 // New progress circle
 const LoadCircle3 = new CircularProgress({ BGColor: Color3.fromRGB(23, 27, 85), Position: UDim2.fromScale(0.04, 0.65) });
 LoadCircle3.Color = new Color3(1, 1, 1);
 LoadCircle3.BGRoundness = 0.1;
-LoadCircle3.AnchorPoint = new Vector2(0.5, 0.5); // -- By default the anchor point is(0, 1) set it to(0, 0) if you need to
+LoadCircle3.AnchorPoint = new Vector2(0.5, 0.5); // By default the anchor point is(0, 1) set it to(0, 0) if you need to
 LoadCircle3.Thickness = 0.5;
 LoadCircle3.CircleSize = 0.8;
 LoadCircle3.Transparency = 0.7;

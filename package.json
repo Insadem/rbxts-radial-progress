@@ -7,6 +7,7 @@
     "out/*.lua",
     "./README.md"
   ],
+  "repository": {"url": "https://github.com/Insadem/rbxts-radial-progress", "type": "github"},
   "homepage": "https://devforum.roblox.com/t/circular-radial-progress-bar-rounded/1594512",
   "scripts": {
     "build": "rbxtsc",
