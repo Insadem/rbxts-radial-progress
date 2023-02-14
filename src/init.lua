@@ -211,4 +211,6 @@ CircularProgress.PresetAnimations = { -- Map<string, function(this)> - this is C
 	InfSpin3 = PresetAnimations.InfSpin3
 }
 
-return CircularProgress
+return {
+	CircularProgress = CircularProgress,
+}
