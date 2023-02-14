@@ -87,6 +87,7 @@ type ProgressUIProperties = Partial<{
      * Is circular progress rounded.
      */
     Rounded: boolean,
+    Parent: ScreenGui | GuiObject,
 }>
 
 type ProgressWorldspaceProperties = Partial<{

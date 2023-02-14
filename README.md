@@ -4,6 +4,7 @@ Documentation & other info: [link](https://devforum.roblox.com/t/circular-radial
 Repository: [link](https://github.com/Insadem/rbxts-radial-progress).<br/>
 Author: [HintSystem](https://www.roblox.com/users/283367718/profile).<br/>
 Typings & slight changes: [Insadem](https://www.roblox.com/users/1644392228/profile).<br/>
+Version of this raw module: 2.0.0.<br/>
 
 Installation:
 ```
