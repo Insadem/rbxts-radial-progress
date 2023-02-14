@@ -1,6 +1,6 @@
 {
   "name": "@rbxts/radial-progress",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Radial progress for all your needs.",
   "main": "src/index.d.ts",
   "types": "src/index.d.ts",
