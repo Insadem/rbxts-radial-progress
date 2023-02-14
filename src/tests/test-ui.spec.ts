@@ -1,4 +1,4 @@
-import CircularProgress from "index";
+import { CircularProgress } from "index";
 
 game.GetService("StarterGui").SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, false);
 

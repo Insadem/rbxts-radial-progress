@@ -1,4 +1,4 @@
-type ProgressCircleUI = Frame & {
+export type ProgressCircleUI = Frame & {
     BG: Frame & {
         UICorner: UICorner;
     };
@@ -33,7 +33,7 @@ type ProgressCircleUI = Frame & {
     };
 }
 
-type ProgressUIProperties = Partial<{
+export type ProgressUIProperties = Partial<{
     /**
      * Progress of circular progress.
      * From 0 to 100.
@@ -127,7 +127,7 @@ type ProgressWorldspaceProperties = Partial<{
     Parent?: Instance,
 }>
 
-interface ProgressWorldspace extends Required<ProgressWorldspaceProperties>
+export interface ProgressWorldspaceInstance extends Required<ProgressWorldspaceProperties>
 {
     Instance: Folder,
     Tween(tweenInfo: TweenInfo, properties: ProgressWorldspaceProperties): void,
@@ -138,7 +138,7 @@ interface ProgressWorldspace extends Required<ProgressWorldspaceProperties>
     Destroy(): void,
 }
 
-type ProgressViewportProperties = Partial<{
+export type ProgressViewportProperties = Partial<{
     Size: UDim2,
     Position: UDim2,
     /**
@@ -156,12 +156,12 @@ type ProgressViewportProperties = Partial<{
     /**
      * @hidden
      */
-    _WorldspaceCircle: ProgressWorldspace,
+    _WorldspaceCircle: ProgressWorldspaceInstance,
     Parent: ScreenGui | GuiObject,
 }>;
 
 // If Viewport and Worlspace have interfere types, then we keep only type of Viewport. So you can change Worldspace properties too via metamethod.
-type ViewportAndWorldspaceProperties = ProgressViewportProperties & Pick<ProgressWorldspaceProperties, Exclude<keyof ProgressWorldspaceProperties, keyof ProgressViewportProperties>>;
+export type ViewportAndWorldspaceProperties = ProgressViewportProperties & Pick<ProgressWorldspaceProperties, Exclude<keyof ProgressWorldspaceProperties, keyof ProgressViewportProperties>>;
 
 // type ViewportAndWorldspaceProperties = {
 //     [K in keyof ProgressViewportProperties]: K extends keyof ProgressWorldspaceProperties
@@ -173,7 +173,7 @@ type ViewportAndWorldspaceProperties = ProgressViewportProperties & Pick<Progres
 //         : ProgressWorldspaceProperties[K];
 // }
 
-type ProgressViewport = {
+export type ProgressViewportInstance = {
     Instance: ViewportFrame,
     Tween(tweenInfo: TweenInfo, properties: ProgressWorldspaceProperties): void,
     /**
@@ -183,7 +183,7 @@ type ProgressViewport = {
     Destroy(): void,
 } & Required<ViewportAndWorldspaceProperties>
 
-type CircularProgressInstance = {
+export type CircularProgressInstance = {
     /**
          * Progress circle ui for your customizations.
          */
@@ -203,8 +203,8 @@ type CircularProgressInstance = {
 interface CircularProgress
 {
     new(properties?: ProgressUIProperties): CircularProgressInstance,
-    fromViewport: (properties?: ViewportAndWorldspaceProperties) => ProgressViewport,
-    fromWorldspace: (properties?: ProgressWorldspaceProperties) => ProgressWorldspace,
+    fromViewport: (properties?: ViewportAndWorldspaceProperties) => ProgressViewportInstance,
+    fromWorldspace: (properties?: ProgressWorldspaceProperties) => ProgressWorldspaceInstance,
     /**
      * Preset animations. By default there's 3 of them: InfSpin1, InfSpin2, InfSpin3.
      * You can add any presets that you want. Don't call callbacks directly.
@@ -214,5 +214,4 @@ interface CircularProgress
     },
 }
 
-declare const CircularProgress: CircularProgress;
-export = CircularProgress;
+export declare const CircularProgress: CircularProgress;

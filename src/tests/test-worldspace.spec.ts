@@ -1,4 +1,4 @@
-import CircularProgress from "index";
+import { CircularProgress } from "index";
 
 const ProgressBar = CircularProgress.fromViewport();
 ProgressBar.Accuracy = 6;
